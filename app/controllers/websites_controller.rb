@@ -9,7 +9,7 @@ class WebsitesController < ApplicationController
     end
    
     def contact_us 
-       render "contact_us"
+       render "contact-us"
     end
    
     def home 

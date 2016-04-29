@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   
   
-  get "/home", {:controller => "websites", :action => "home"}
-  get "/about-us", {:controller => "websites", :action => "bio"}
-  get "/schedule", {:controller => "websites", :action => "calender"}
-  get "/activities", {:controller => "websites", :action => "menu"}
-  get "/registration", {:controller => "websites", :action => "payment"}
-  get "/contact-us", {:controller => "websites", :action => "photo"}
+  get "/home",        {:controller => "websites", :action => "home"}
+  get "/about-us",    {:controller => "websites", :action => "about-us"}
+  get "/schedule",    {:controller => "websites", :action => "schedule"}
+  get "/activities",  {:controller => "websites", :action => "activites"}
+  get "/registration",{:controller => "websites", :action => "registration"}
+  get "/contact-us",  {:controller => "websites", :action => "contact-us"}
 
   
   # The priority is based upon order of creation: first created -> highest priority.

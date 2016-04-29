@@ -9,73 +9,42 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-       <img src="/assets/logo.png" alt="logo" class="one">
          <div class="container">
-
-    <!-- Static navbar -->
-    <nav class="navbar navbar-inverse navbar-static-top">
-      <div class="container-fluid">
+ 
+   <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#">Unique Home Daycare</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="home.html">Home</a></li>
-            <li class="dropdown" >
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >About Us <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="active"><a href="bio.html">Bio</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="photo_album.html">Photo Album</a></li>
-              </ul>
-            </li>
-             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Schedule <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="calender.html">Calender</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="activity_scheduel.html">Activity Schedule</a></li>
-              </ul>
-            </li>
-             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trips <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="field_trips.html">Field Trips</a></li>
-                <li role="separator" class="divider"></li>
-              </ul>
-            </li>
-             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Applcation <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Daycare Form</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="payment.html">Payment</a></li>
-              </ul>
-            </li>
-             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Donate <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="donate.html">Donation Form</a></li>
-                <li role="separator" class="divider"></li>
-              </ul>
-            </li>
-             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Contact Admininstartion</a></li>
-                <li role="separator" class="divider"></li>
+            <li class="active"><a href="/home">Home</a></li>
+            <li><a href="/about-us">About us</a></li>
+            <li><a href="/activities">Activites</a></li>
+            <li><a href="/registration">Registration</a></li>
+            <li><a href="/schedule">Schedule</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
               </ul>
             </li>
           </ul>
-        </div>
-        <!--/.nav-collapse -->
+        </div><!--/.nav-collapse -->
       </div>
-      <!--/.container-fluid -->
-
-    </nav>
-
+    </nav
     <!-- End of nav bar Container -->
+    <br>
+    <br>
+    <br>
+    
+     <div class="container">
+     <img src="/assets/logo.png" alt="logo" class="one">
+     </div>
 <%= yield %>
 
 </body>
